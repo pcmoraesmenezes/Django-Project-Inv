@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investimentos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'myapp/css/styles.css' %}">
+</head>
+<body>
+    <h1>Investimentos</h1>
+    <table id="investments-table">
+        <thead>
+            <tr>
+                <th>Tipo de Investimento</th>
+                <th>Data</th>
+                <th>Valor</th>
+                <th>Vencimento</th>
+                <th>Taxa de Retorno</th>
+                <th>Retorno se Removido Imediatamente</th>
+                <th>Imposto</th>
+                <th>Valor Atual</th>
+                <th>Tempo de Aplicação</th>
+                <th>Ganhos</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <button id="update-button">Atualizar Dados</button>
+    <script src="{% static 'myapp/js/scripts.js' %}"></script>
+</body>
+</html>
