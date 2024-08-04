@@ -2,3 +2,4 @@ venv
 __pycache__
 .env
 sheet-inv-c670b38614b5.json
+db.sqlite3
