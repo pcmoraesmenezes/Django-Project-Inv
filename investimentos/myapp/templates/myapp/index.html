@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bem-vindo aos Investimentos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'myapp/css/index.css' %}">
 </head>
 <body>
-    <h1>
-        Hello, World!
-    </h1>
+    <header>
+        <div class="container">
+            <h1>Bem-vindo ao Gerenciador de Investimentos</h1>
+            <p>Gerencie seus investimentos de maneira fácil e eficiente.</p>
+            <a href="{% url 'view_inv' %}" class="btn">Acessar Investimentos</a>
+        </div>
+    </header>
+    <main>
+        <section class="features">
+            <div class="container">
+                <div class="feature">
+                    <h2>Monitoramento em Tempo Real</h2>
+                    <p>Acompanhe seus investimentos com dados atualizados em tempo real.</p>
+                </div>
+                <div class="feature">
+                    <h2>Relatórios Detalhados</h2>
+                    <p>Obtenha relatórios completos sobre o desempenho dos seus investimentos.</p>
+                </div>
+                <div class="feature">
+                    <h2>Segurança e Privacidade</h2>
+                    <p>Seus dados estão seguros e protegidos com a gente.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gerenciador de Investimentos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
