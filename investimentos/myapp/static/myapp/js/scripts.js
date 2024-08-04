@@ -16,7 +16,7 @@ function fetchData(url) {
         }
 
         const tableBody = document.querySelector('#investments-table tbody');
-        tableBody.innerHTML = ''; // Limpar a tabela
+        tableBody.innerHTML = '';
 
         const investments = data.data;
 

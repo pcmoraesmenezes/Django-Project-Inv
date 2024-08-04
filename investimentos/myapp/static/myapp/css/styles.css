@@ -15,7 +15,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 95%;
-    max-width: 1700px; /* Aumentar a largura máxima do container */
+    max-width: 1700px;
     text-align: center;
     overflow-x: auto;
 }
@@ -30,7 +30,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    table-layout: auto; /* Mudar de fixed para auto */
+    table-layout: auto;
 }
 
 th, td {
@@ -40,10 +40,10 @@ th, td {
 }
 
 th {
-    background-color: #007bff;
+    background-color: #7094bb;
     color: #ffffff;
     text-transform: uppercase;
-    white-space: nowrap; /* Evitar quebra de linha nos cabeçalhos */
+    white-space: nowrap;
 }
 
 td {
@@ -70,7 +70,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    margin-top: 20px; /* Adiciona margem superior */
+    margin-top: 20px;
 }
 
 button:hover {

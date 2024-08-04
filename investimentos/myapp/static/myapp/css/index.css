@@ -22,7 +22,7 @@ header h1 {
 }
 
 header p {
-    margin: 10px 0 30px; /* Aumentar a margem inferior para mais espaçamento */
+    margin: 10px 0 30px;
     font-size: 1.2rem;
 }
 
@@ -35,7 +35,7 @@ header .btn {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
-    margin-bottom: 20px; /* Adicionar margem inferior para mais espaçamento */
+    margin-bottom: 20px;
 }
 
 header .btn:hover {
@@ -45,7 +45,7 @@ header .btn:hover {
 
 main {
     padding: 50px 0;
-    flex: 1; /* Permitir que o main cresça para preencher o espaço disponível */
+    flex: 1;
 }
 
 .features {
@@ -74,7 +74,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: auto; /* Garantir que o rodapé fique na parte inferior da página */
+    margin-top: auto;
 }
 
 footer p {
