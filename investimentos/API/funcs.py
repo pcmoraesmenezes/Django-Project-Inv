@@ -77,7 +77,7 @@ def atualizar_sheets(worksheet, df, max_retries=10):
 
     print(tempo_de_aplicacao, valor_atual, ganhos)    
     
-    cell_range_tempo = f'I2:I{len(df) + 1}'
+    cell_range_tempo = f'G2:G{len(df) + 1}'
     cell_list_tempo = worksheet.range(cell_range_tempo)
     for i, cell in enumerate(cell_list_tempo):
         cell.value = int(tempo_de_aplicacao.iloc[i])
@@ -87,7 +87,7 @@ def atualizar_sheets(worksheet, df, max_retries=10):
     for i, cell in enumerate(cell_list_valor):
         cell.value = float(valor_atual.iloc[i])
 
-    cell_range_ganhos = f'J2:J{len(df) + 1}'
+    cell_range_ganhos = f'I2:I{len(df) + 1}'
     cell_list_ganhos = worksheet.range(cell_range_ganhos)
     for i, cell in enumerate(cell_list_ganhos):
         cell.value = float(ganhos.iloc[i])
@@ -123,3 +123,5 @@ def update_data_from_sheet():
     df = pd.DataFrame(data[1:], columns=data[0])
     atualizar_sheets(worksheet, df)
     return df
+
+update_data_from_sheet()
