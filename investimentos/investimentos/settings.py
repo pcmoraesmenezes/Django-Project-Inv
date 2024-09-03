@@ -19,7 +19,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 dotenv_path = os.path.join(BASE_DIR, 'API', '.env')
 load_dotenv(dotenv_path)
 
+API_KEY_PATH = Path.cwd() / '.env'
+
+load_dotenv(dotenv_path=API_KEY_PATH)
+
 API_KEY = os.getenv('API_KEY')
+
 
 DATABASES = {
     'default': {
