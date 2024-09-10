@@ -82,12 +82,12 @@ def atualizar_sheets(worksheet, df, max_retries=10):
     for i, cell in enumerate(cell_list_tempo):
         cell.value = int(tempo_de_aplicacao.iloc[i])
 
-    cell_range_valor = f'H2:H{len(df) + 1}'
+    cell_range_valor = f'I2:I{len(df) + 1}'
     cell_list_valor = worksheet.range(cell_range_valor)
     for i, cell in enumerate(cell_list_valor):
         cell.value = float(valor_atual.iloc[i])
 
-    cell_range_ganhos = f'I2:I{len(df) + 1}'
+    cell_range_ganhos = f'H2:H{len(df) + 1}'
     cell_list_ganhos = worksheet.range(cell_range_ganhos)
     for i, cell in enumerate(cell_list_ganhos):
         cell.value = float(ganhos.iloc[i])
