@@ -17,7 +17,7 @@ def get_sheet(request):
         'api_key': settings.API_KEY
     }
     try:
-        response = requests.get('http://ec2-18-188-29-216.us-east-2.compute.amazonaws.com:8000/visualizar_dados_investimentos', headers=headers)
+        response = requests.get('http://ec2-18-188-29-216.us-east-2.compute.amazonaws.com:8000/api/visualizar_dados_investimentos', headers=headers)
         response.raise_for_status()
         data = response.json()
     except requests.exceptions.RequestException as e:
@@ -30,7 +30,7 @@ def update_data(request):
         'api_key': settings.API_KEY
     }
     try:
-        response = requests.post('http://ec2-18-188-29-216.us-east-2.compute.amazonaws.com:8000/atualizar_dados_investimentos', headers=headers)
+        response = requests.post('http://ec2-18-188-29-216.us-east-2.compute.amazonaws.com:8000/api/atualizar_dados_investimentos', headers=headers)
         response.raise_for_status()
         data = response.json()
     except requests.exceptions.RequestException as e:
