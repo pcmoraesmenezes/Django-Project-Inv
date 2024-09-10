@@ -29,7 +29,7 @@ async def atualizar_taxas(api_key: str = Depends(validar_chave)):
         return {"message": f"Erro ao atualizar planilha: {e}"}
     
 
-@app.get("/visualizar_dados_investimentos")
+@app.get("/api/visualizar_dados_investimentos")
 async def visualizar_dados_investimentos(api_key: str = Depends(validar_chave)):
     """
     Essa função retorna os dados da planilha de investimentos.
@@ -41,7 +41,7 @@ async def visualizar_dados_investimentos(api_key: str = Depends(validar_chave)):
         return {"message": f"Erro ao obter dados da planilha: {e}"}
     
 
-@app.post("/atualizar_dados_investimentos")
+@app.post("/api/atualizar_dados_investimentos")
 async def atualizar_dados_investimentos(api_key: str = Depends(validar_chave)):
     """
     Essa função atualiza os dados da planilha de investimentos.
